@@ -1,9 +1,109 @@
+:root {
+    --grisfonce: #3c4245;
+    --grisclair:  #5f6769;
+    --gristresclair:  #c4c4c4;
+    --bleu: #719192;
+    --rose: #f0bebe;
+}
+
 dt {
     float: left;
     clear: left;
     font-weight: bold;
+    margin-right: 0.5em;
 }
 
 dt::after {
-    content: " : ";
+    content: " :";
+}
+
+ html > body {
+    color: var(--gristresclair);
+    background-image: url("assets/pmf.jpg");
+    padding: 0;
+    font-family: Arial, -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    cursor: default;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: normal;
+}
+
+.contenu {
+    
+}
+
+.partie {
+    margin: 1em;
+    background-color:var(--grisfonce);
+    padding: 0.5em;
+}
+
+h1, h2, h3 {
+    color: var(--rose);
+}
+
+a {
+    color: var(--bleu);
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+    body {
+        margin: 0 25em;
+    }
+}
+  
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        margin: 0 20em;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        margin: 0 5em;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        margin: 0 12em;
+    }
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        margin: 0 5em;
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-size: 1.2rem;
+    }
 }
