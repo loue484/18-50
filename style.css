@@ -30,10 +30,6 @@ dt::after {
     font-kerning: normal;
 }
 
-.contenu {
-    
-}
-
 .partie {
     margin: 1em;
     background-color:var(--grisfonce);
